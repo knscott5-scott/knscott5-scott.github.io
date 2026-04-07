@@ -184,7 +184,7 @@ dt {
     flex-wrap: wrap;
     gap: 2em;
     margin-bottom: 2em;
-    align-items: flex-start;
+    align-items: stretch;
     margin-left: auto;
     margin-right: auto;
 }
@@ -195,11 +195,12 @@ dt {
 
 .video-left .video-container iframe {
     width: 100%;
-    height: 225px;
+    height: 320px;
 }
 
 .quick-links-right {
     flex: 1 1 200px;
+    flex-direction: column;
     background-color: #f2f2f2;
     padding: 1em;
     border: 1px solid #CCCCCC;
@@ -230,6 +231,52 @@ dt {
 
 * {
     box-sizing: border-box;
+}
+
+form {
+    max-width: 600px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #f9f9f9;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 0.6em;
+    margin-top: 0.3em;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #75bc71;
+    outline: none;
+    box-shadow: 0 0 5px rgba(117,188,113,0.5);
+}
+
+input[type="submit"] {
+    margin-top: 1.5em;
+    background-color: #75bc71;
+    color: white;
+    border: none;
+    font-size: 1em;
+    border-radius: 5px;
+    padding: 0.7em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5aa85a;
 }
 
 @media (min-width: 600px) {
