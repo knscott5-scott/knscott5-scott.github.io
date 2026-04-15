@@ -106,7 +106,8 @@ footer {
 
 #thebasicshero {
     background-image: url(insurance.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     height: 300px;
     background-repeat: no-repeat;
 }
@@ -139,21 +140,24 @@ tr:nth-child(even) {
 
 #findcoveragehero {
     background-image: url(search.jpeg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     height: 300px;
     background-repeat: no-repeat;
 }
 
 #morehelphero {
     background-image: url(trail.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     height: 300px;
     background-repeat: no-repeat;
 }
 
 #extratipshero {
     background-image: url(trail.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center;
     height: 300px;
     background-repeat: no-repeat;
 }
@@ -195,12 +199,13 @@ dt {
 
 .video-left .video-container iframe {
     width: 100%;
-    height: 320px;
+    height: 100%;
 }
 
 .quick-links-right {
     flex: 1 1 200px;
     flex-direction: column;
+    display: flex;
     background-color: #f2f2f2;
     padding: 1em;
     border: 1px solid #CCCCCC;
