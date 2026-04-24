@@ -129,7 +129,6 @@ td {
 }
 
 table td:first-child {
-    background-color: #0e38c0;
     font-weight: bold;
     background-color: #e6f2ff;
 }
@@ -172,9 +171,8 @@ dt {
 }
 
 .video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+    width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .video-container iframe {
@@ -194,7 +192,7 @@ dt {
 }
 
 .video-left {
-    flex: 1 1 400px;
+    flex: 1 1 100%;
 }
 
 .video-left .video-container iframe {
